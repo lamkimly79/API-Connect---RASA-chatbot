@@ -1,0 +1,55 @@
+version: "3.1"
+
+stories:
+
+- story: ask nganh
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_bot
+  - action: utter_ans
+  - action: utter_did_that_help
+
+- story: ask 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_bot
+  - action: utter_ans
+  - action: utter_did_that_help
+
+  
+##- story: ask code diendientu
+##  steps:
+##  - intent: greet
+##  - action: utter_greet
+##  - intent: ask_bot
+##  - action: utter_ans
+##  - intent: ask_code_ddt
+##  - action: utter_ans_kindof
+##  - action: utter_ans_choose
+##  - intent: ask_codeddt1
+##  - action: utter_ans_codeddt1
+##  - intent: ask_codeddt2
+##  - action: utter_ans_codeddt2
+##  - action: utter_else
+
+##- story: ask doidap
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: ask_bot
+#  - action: utter_ans
+#  - intent: ask_code_ddt
+#  - action: utter_ans_kindof
+#  - action: utter_ans_choose
+#  - intent: ask_codeddt1
+#  - action: utter_ans_codeddt1
+#  - intent: ask_codeddt2
+#  - action: utter_ans_codeddt2
+#  - action: utter_else
+#  - intent: ask_khoa
+#  - action: utter_ans2
+#  - action: utter_list
+#  - action: utter_else
+

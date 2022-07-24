@@ -1,0 +1,106 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- rule: Say Bạn cứ đặt câu hỏi mình sẽ giải đáp cho nhe <3 anytime the user says affirm
+  steps:
+  - intent: affirm
+  - action: utter_happy
+
+- rule: Say 'toi la bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: say 'không có chi hihi!' anytime the user thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+  - action: utter_else
+
+- rule: say 'nếu không có thắc mắc gì thì mình xin dừng ạ.
+      bạn có thể liên hệ mình bất cứ lúc nào' anytime the user deny
+  steps:
+  - intent: deny
+  - action: utter_not_help
+
+- rule: say 'hiện tại trường có những ưu đãi cho sinh viên sau đây:' anytime the user ask_uudai
+  steps:
+  - intent: ask_uudai
+  - action: utter_ask_uudai
+  - action: utter_ans_udso1
+  - action: utter_ans_udso2
+  - action: utter_ans_udso3
+  - action: utter_else
+
+- rule: say ' Mức học phí Tùy theo từng nhóm ngành nghề cụ thể, có những ưu đãi cho sinh viên sau đây:' anytime the user ask_hocphi
+  steps:
+  - intent: ask_hocphi
+  - action: utter_ans_hocphi
+  - action: utter_ans_hp
+  - action: utter_else
+##hỏi bộ môn
+- rule: say 'có bao nhiêu bộ môn' anytime the user ask_khoa
+  steps:
+  - intent: ask_khoa
+  - action: utter_ans2
+  - action: utter_list
+  - action: utter_else
+##hỏi mã ngành:
+
+- rule: say 'mã ngành cntt:' anytime the user ask_code_cntt
+  steps:
+  - intent: ask_code_cntt
+  - action: utter_ans_codecntt
+  - action: utter_else
+- rule: say 'mã ngành cơ khí:' anytime the user ask_code_ck
+  steps:
+  - intent: ask_code_ck
+  - action: utter_ans_codeck
+  - action: utter_else
+- rule: say 'mã ngành cn oto:' anytime the user ask_code_oto
+  steps:
+  - intent: ask_code_oto
+  - action: utter_ans_codeoto
+  - action: utter_else
+- rule: say 'mã ngành tự động hoá:' anytime the user ask_code_tdh
+  steps:
+  - intent: ask_code_tdh
+  - action: utter_ans_codetdh
+  - action: utter_else
+- rule: say 'mã ngành giao thông:' anytime the user ask_code_gt
+  steps:
+  - intent: ask_code_gt
+  - action: utter_ans_codegt
+  - action: utter_else
+- rule: say 'mã ngành hệ thống thông tin quản lý:' anytime the user ask_code_htql
+  steps:
+  - intent: ask_code_htql
+  - action: utter_ans_codehtql
+  - action: utter_else
+- rule: say 'mã ngành xd:' anytime the user ask_code_xd
+  steps:
+  - intent: ask_code_xd
+  - action: utter_ans_codexd
+  - action: utter_else
+  ##điện điện tử:
+- rule: say 'diendientu:' anytime the user ask_code_ddt
+  steps:
+  - intent: ask_code_ddt
+  - action: utter_ans_kindof
+  - action: utter_ans_choose
+
+- rule: say 'diendientu1:' anytime the user ask_code_ddt
+  steps:
+  - intent: ask_codeddt1
+  - action: utter_ans_codeddt1
+- rule: say 'diendientu2:' anytime the user ask_code_ddt
+  steps:
+  - intent: ask_codeddt2
+  - action: utter_ans_codeddt2
+

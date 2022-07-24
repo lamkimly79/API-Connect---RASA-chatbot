@@ -1,0 +1,131 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - xin chào
+    - chào
+    - hello
+    - hellu
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - bye
+    - bái bai
+- intent: affirm
+  examples: |
+    - yes
+    - cần
+    - có cần
+    - có á
+    - có
+    - ok
+- intent: thanks
+  examples: |
+    - cám ơn nhe!
+    - thk u
+    - mơn nhe
+    - ty
+    - thank
+    - thanks
+    - cúm ơn
+- intent: deny
+  examples: |
+    - no
+    - không
+    - k
+    - ko
+    - hog
+    - hong
+- intent: mood_great
+  examples: |
+    - 
+- intent: ask_bot
+  examples: |
+    - bạn có thể làm gì
+    - bạn có thể hỗ trợ gì
+    - hỗ trợ
+- intent: bot_challenge
+  examples: |
+    - bạn là ai
+    - ai đó
+- intent: ask_khoa
+  examples: |
+    - khoa KTCN có bao nhiêu bộ môn
+    - có bao nhiêu bộ môn
+    - bao nhiêu bộ môn
+    - những bộ môn gì
+- intent: ask_uudai
+  examples: |
+    - Nhà trường hiện có chính sách ưu đãi gì cho sinh viên?
+    - chính sách ưu đãi
+    - trường có ưu đãi gì k
+- intent: ask_hocphi
+  examples: |
+    - Mức thu học phí của Trường Đại học Trà Vinh cụ thể như thế nào?
+    - Học phí ở đại học Trà Vinh
+    - Học phí TVU
+    - Học phí bao nhiêu
+- intent: ask_code_cntt
+  examples: |
+    - cho mình hỏi mã ngành cntt
+    - mã CNTT
+    - mã cntt
+    - mã ngành cntt
+    - cho mình hỏi mã ngành công nghệ thông tin
+    - mã công nghệ thông tin
+    - mã ngành công nghệ thông tin
+- intent: ask_code_ddt
+  examples: |
+    - cho mình hỏi mã ngành Công nghệ kỹ thuật điện, điện tử là
+    - mã ngành Công nghệ kỹ thuật điện, điện tử là
+    - mã ddt
+    - mã ngành ddt
+- intent: ask_code_ddt1
+  examples: |
+    - CHUYÊN NGÀNH ĐIỆN CÔNG NGHIỆP
+    - chuyên ngành điện công nghiệp
+    - điện công nghiệp
+    - cn điện công nghiệp
+    - đcn
+- intent: ask_code_ddt2
+  examples: |
+    - mã ngành hệ thống điện
+    - hệ thống điện
+    - htd
+- intent: ask_code_xd
+  examples: |
+    - cho mình hỏi mã ngành Công nghệ kỹ thuật công trình xây dựng
+    - mã ngành Công nghệ kỹ thuật công trình xây dựng
+    - mã xd
+    - mã ngành xd
+- intent: ask_code_tdh
+  examples: |
+    - cho mình hỏi mã ngành Công nghệ kỹ thuật điều khiển và tự động hóa
+    - mã ngành Công nghệ kỹ thuật điều khiển và tự động hóa
+    - mã tdh
+    - mã ngành tdh
+- intent: ask_code_ck
+  examples: |
+    - cho mình hỏi mã ngành Công nghệ cơ khí
+    - mã ngành Công nghệ kỹ thuật cơ khí
+    - mã ngành ck
+    - mã ngành cơ khí
+- intent: ask_code_gt
+  examples: |
+    - cho mình hỏi mã ngành Công nghệ công trình giao thông
+    - mã ngành Công nghệ công trình giao thông
+    - mã ngành công trình giao thông
+- intent: ask_code_oto
+  examples: |
+    - cho mình hỏi mã ngành Công nghệ ô tô
+    - mã ngành Công nghệ công trình ô tô
+    - mã ngành ô tô
+    - mã ngành oto
+- intent: ask_code_htql
+  examples: |
+    - cho mình hỏi mã ngành hệ thống thông tin quản lý
+    - mã ngành hệ thống thông tin quản lý
+    - mã hệ thống thông tin quản lý
+    - mã htttql
+    - mã ttql
+

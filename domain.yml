@@ -1,0 +1,136 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - ask_bot
+  - bot_challenge
+  - ans
+  - ask_khoa
+  - thanks
+  - ask_uudai
+  - ask_hocphi
+  - ask_code_cntt
+  - ask_code_ddt
+  - ask_codeddt1
+  - ask_codeddt2
+  - ask_code_xd
+  - ask_code_tdh
+  - ask_code_ck
+  - ask_code_gt
+  - ask_code_oto
+  - ask_code_htql
+  
+responses:
+
+  utter_greet:
+  - text: "xin chào! Tôi có thể giúp gì được cho bạn không"
+
+  utter_ans:  
+  - text: "Tôi có thể hỗ trợ trả lời câu hỏi tuyển sinh ở khoa KTCN TVU ạ"
+
+  utter_thanks:
+  - text: " không có chi hihi! "
+
+  utter_did_that_help:
+  - text: "bạn có cần hỗ trợ gì không nhỉ?"
+  utter_not_help:
+  - text: "nếu không có thắc mắc gì thì mình xin dừng ạ.
+            bạn có thể liên hệ mình bất cứ lúc nào"
+
+  utter_else:
+  - text: " Còn thắc mắc gì bạn cứ đặt câu hỏi nhe!"
+
+  utter_happy:
+  - text: "Bạn cứ đặt câu hỏi mình sẽ giải đáp cho nhe <3"
+
+  utter_goodbye:
+  - text: "chào tạm biệt! chúc một ngày tốt lành"
+
+  utter_iamabot:
+  - text: "Tôi là TVU chatbot ạ!"
+
+## ưu đãi sinh viên
+  utter_ask_uudai:
+  - text: "hiện tại trường có những ưu đãi cho sinh viên sau đây:"
+
+  utter_ans_udso1:
+  - text: "Chính sách miễn giảm 100% học phí SV học các ngành sư phạm, biểu diễn nhạc cụ truyền thống."
+
+  utter_ans_udso2:
+  - text: "Chính sách cấp học bổng khuyến khích SV nữ (tương đương 50% học phí toàn khóa học) dành cho các SV nữ theo học các ngành kỹ thuật công nghệ."
+  utter_ans_udso3:
+  - text: "Hỗ trợ SV vay vốn khởi nghiệp và thực hiện đầy đủ các chính sách SV nghèo, SV người Khmer, SV chính sách và SV thuộc nhóm yếu thế theo quy định hiện hành. Bên cạnh đó Trường còn có học bổng tài trợ sinh viên vượt khó và học bổng khuyến khích học tập."
+## học phí
+  utter_ans_hocphi:
+   - text: " ĐH Trà Vinh là Trường Công lập nên mức học phí sẽ giống như các trường công lập khác trong cả nước.
+   Đồng thời Trường có nhiều chính sách hỗ trợ cho SV diện chính sách, SV có hoàn cảnh khó khăn, SV người người dân tộc thiểu số, SV thuộc nhóm yếu thế có cơ hội học đại học."
+  utter_ans_hp:
+   - text: " Mức học phí: Tùy theo từng nhóm ngành nghề cụ thể, cơ bản mức học phí giao động khoảng:
+Nhóm 1: từ 13.000.000đ đến 18.000.000đ/năm học tùy theo từng ngành cụ thể."
+
+  utter_ans2:
+   - text: " hiện tại khoa KTCN có 9 bộ mô nhe"
+  utter_list:
+   - text: " Bao gồm bộ môn 
+
+  Công nghệ kỹ thuật điện, điện tử (CHUYÊN NGÀNH ĐIỆN CÔNG NGHIỆP)
+
+  Công nghệ kỹ thuật điện, điện tử (CHUYÊN NGÀNH HỆ THỐNG ĐIỆN)
+
+  Công nghệ thông tin  Ngành đào tạo đạt kiểm định chất lượng ABET
+
+  Công nghệ kỹ thuật công trình xây dựng 
+
+  Công nghệ kỹ thuật điều khiển và tự động hóa 
+
+  Công nghệ kỹ thuật cơ khí
+
+  Kỹ thuật xây dựng công trình giao thông 
+
+  Hệ thống thông tin quản lý 
+
+  Công nghệ kỹ thuật ô tô "
+
+## hỏi mã ngành
+
+  utter_ans_codecntt:
+  - text: " Mã ngành Công nghệ thông tin là: (7480201)\n
+- Thông tin chi tiết tại website: https://www.tvu.edu.vn/cong-nghe-thong-tin-7480201/"
+  utter_ans_kindof:
+  - text: " có 2 loại điện điện tử:
+          (CHUYÊN NGÀNH ĐIỆN CÔNG NGHIỆP) và (CHUYÊN NGÀNH HỆ THỐNG ĐIỆN)"
+  utter_ans_choose:
+  - text: " không biết bạn hỏi loại nào nhỉ?"
+  utter_ans_codexd:
+  - text: " Mã ngành Công nghệ kỹ thuật công trình xây dựng là: (7510102)\n
+- Thông tin chi tiết tại website: https://www.tvu.edu.vn/cong-nghe-ky-thuat-cong-trinh-xay-dung-7510102/"
+  utter_ans_codetdh:
+  - text: " Mã ngành Công nghệ kỹ thuật điều khiển và tự động hóa là (7510303)\n
+- Thông tin chi tiết tại website:https://www.tvu.edu.vn/cong-nghe-ky-thuat-dieu-khien-va-tu-dong-hoa-7510303/"
+  utter_ans_codeck:
+  - text: " Mã ngành Công nghệ kỹ thuật cơ khí là: (7510201)\n
+- Thông tin chi tiết tại website:https://www.tvu.edu.vn/cong-nghe-ky-thuat-co-khi-7510201/"
+  utter_ans_codeddt2:
+  - text: " Mã ngành Công nghệ kỹ thuật điện, điện tử (7510301) (CHUYÊN NGÀNH HỆ THỐNG ĐIỆN) \n
+  - Thông tin chi tiết tại website: https://www.tvu.edu.vn/cong-nghe-ky-thuat-dien-dien-tu-7510301-chuyen-nganh-he-thong-dien/"
+  utter_ans_codeddt1:
+  - text: " Mã ngành Công nghệ kỹ thuật điện, điện tử (7510301) (CHUYÊN NGÀNH ĐIỆN CÔNG NGHIỆP) \n
+ - Thông tin chi tiết tại website: https://www.tvu.edu.vn/cong-nghe-ky-thuat-dien-dien-tu-7510301/"
+  utter_ans_codegt:
+  - text: " Mã ngành Công nghệ Kỹ thuật xây dựng công trình giao thông là: (7580205)\n
+- Thông tin chi tiết tại website https://www.tvu.edu.vn/ky-thuat-xay-dung-cong-trinh-giao-thong-7580205/:"
+  utter_ans_codeoto:
+  - text: " Mã ngành Công nghệ kỹ thuật ô tô là: (7510205)\n
+- Thông tin chi tiết tại website: https://www.tvu.edu.vn/cong-nghe-ky-thuat-o-to-7510205/"
+  utter_ans_codehtql:
+  - text: " Mã ngành Hệ thống thông tin quản lý là: (7340405)\n 
+- Thông tin chi tiết tại website:https://www.tvu.edu.vn/he-thong-thong-tin-quan-ly-7340405/"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

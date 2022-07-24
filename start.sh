@@ -1,0 +1,1 @@
+rasa initrasa run --endpoints endpoints.yml --credentials credentials.yml --cor '*' --debug
